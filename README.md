@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +11,6 @@
         }
     </style>
 </head>
-
 <body>
     <h1 id="ppp">替换</h1>
     <hr color="pink" />
