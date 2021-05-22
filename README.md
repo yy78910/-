@@ -13,7 +13,6 @@
 <body>
     <h1 id="ppp">感谢牛晓冉</h1>
     <hr color="pink" />
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
         alert('牛晓冉辛苦了');
     </script>
