@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,12 +11,11 @@
     </style>
 </head>
 <body>
-    <h1 id="ppp">替换</h1>
+    <h1 id="ppp">感谢牛晓冉</h1>
     <hr color="pink" />
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-        var fff = prompt('请输入替换');
-        $('#ppp').html(fff);
+        alert('牛晓冉辛苦了');
     </script>
 </body>
 
