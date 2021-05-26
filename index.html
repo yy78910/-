@@ -9,7 +9,7 @@
 			height: 150px;
 			line-height: 100px;
 			background: pink;
-			color: yellow;
+			color: black;
 			font-style: 14px;
 			text-align: center;
 			border: 5px;
@@ -25,12 +25,24 @@
 			height: 200px;
 			font-size:50px;
 		}
+		.lll{
+			position: absolute;
+			width: 300px;
+			height: 500px;
+			left:500px;
+			top: 0;
+		}
+		.lll img{
+			width: 500px;
+			height: 800px;
+		}
 	</style>
 </head>
 <body bgcolor="deeppink">
 	<input type="button" name="aaa" value="请点击" onclick="ppp()"/>
 	<div class="rrr" onmouseover="eee(this,'#f00')" onmouseout="zzz(this,'#ff0')">欢迎贾老师</div>
 	<div class="rrr" onmouseover="eee(this,'#0d0')" onmouseout="zzz(this,'#333')">欢迎贾老师</div>
+	<div class="lll"><img src="jcx.jpg" alt="欢迎贾超贤老师"></div>
 	<script type="text/javascript">
 		function ppp() {
 			alert('欢迎贾超贤老师');
@@ -43,5 +55,6 @@
 		}
 		alert('欢迎贾老师');
 	</script>
+	<marquee>欢迎贾超贤老师</marquee>
 </body>
 </html>
