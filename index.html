@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>于强强中文网</title>
-	<style type="text/css">
+	<style type="text/css">       
 		body {
             perspective: 1000px;
         }
@@ -100,13 +100,19 @@
 			left:250px;
 			top:275px;
 		}
-		.lll img{
+		#yqq {
 			width: 700px;
 			height: 800px;
 		}
+        #qq {
+            position: absolute;
+            top: 2px;
+            z-index: 1;
+        }
 	</style>
 </head>
 <body bgcolor="deeppink">
+    <img src="qq.png" alt="强强" id="qq">
 	<section>
         <div></div>
         <div></div>
@@ -118,8 +124,15 @@
 	<input type="button" name="aaa" value="请点击" onclick="ppp()"/>
 	<div class="rrr" onmouseover="eee(this,'#f00')" onmouseout="zzz(this,'#808')">欢迎贾老师</div>
 	<div class="rrr" onmouseover="eee(this,'#f0f')" onmouseout="zzz(this,'#0ff')">欢迎贾老师</div>
-	<div class="lll"><img src="jcx.jpg" alt="欢迎贾超贤老师"></div>
+	<div class="lll"><img src="jcx.jpg" alt="欢迎贾超贤老师" id="yqq"></div>
 	<script type="text/javascript">
+        var huj = document.querySelector('#qq');
+        document.addEventListener('mousemove', function(e) {           
+            var x = e.pageX;
+            var y = e.pageY;
+            huj.style.left = x - 50 + 'px';
+            huj.style.top = y - 40 + 'px';
+        });
 		function ppp() {
 			alert('欢迎贾超贤老师');
 		}
