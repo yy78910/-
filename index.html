@@ -15,7 +15,6 @@
             height: 200px;
             margin: 150px auto;
             transform-style: preserve-3d;
-            /* 添加动画效果 */
             animation: rotate 10s linear infinite;
             background: url(tt.jpg) no-repeat;
         }
@@ -105,6 +104,7 @@
 	</style>
 </head>
 <body bgcolor="deeppink">
+    <img src="qq.png" id="kklt">
 	<section>
         <div></div>
         <div></div>
@@ -118,6 +118,13 @@
 	<div class="rrr" onmouseover="eee(this,'#f0f')" onmouseout="zzz(this,'#0ff')">欢迎贾老师</div>
 	<div class="lll"><img src="jcx.jpg" alt="欢迎贾超贤老师"></div>
 	<script type="text/javascript">
+		 var pic = document.querySelector('#kklt');
+        document.addEventListener('mousemove', function(e) {
+            var x = e.pageX;
+            var y = e.pageY;
+            pic.style.left = x - 50 + 'px';
+            pic.style.top = y - 40 + 'px';
+        });
 		function ppp() {
 			alert('欢迎贾超贤老师');
 		}
