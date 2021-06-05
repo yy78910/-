@@ -20,7 +20,6 @@
             background: url(tt.jpg) no-repeat;
         }
         section:hover {
-            /* 鼠标放入section 停止动画 */
             animation-play-state: paused;
         }
         @keyframes rotate {
@@ -46,27 +45,22 @@
         }
         
         section div:nth-child(2) {
-            /* 先旋转好了再 移动距离 */
             transform: rotateY(60deg) translateZ(300px);
         }
         
         section div:nth-child(3) {
-            /* 先旋转好了再 移动距离 */
             transform: rotateY(120deg) translateZ(300px);
         }
         
         section div:nth-child(4) {
-            /* 先旋转好了再 移动距离 */
             transform: rotateY(180deg) translateZ(300px);
         }
         
         section div:nth-child(5) {
-            /* 先旋转好了再 移动距离 */
             transform: rotateY(240deg) translateZ(300px);
         }
         
         section div:nth-child(6) {
-            /* 先旋转好了再 移动距离 */
             transform: rotateY(300deg) translateZ(300px);
         }
 		.rrr{
@@ -108,14 +102,9 @@
 			position: absolute;
 			bottom: 0;
 		}
-		#wcnm {
-            position: absolute;
-            top: 2px;
-        }
 	</style>
 </head>
 <body bgcolor="deeppink">
-	<img src="qq.png" alt="强" id="wcnm">
 	<section>
         <div></div>
         <div></div>
@@ -139,17 +128,6 @@
 			rrr.style.background=bgColor;
 		}
 		alert('欢迎贾老师');
-		var pic = document.querySelector('#wcnm');
-        	document.addEventListener('mousemove', function(e) {
-            
-            var x = e.pageX;
-            var y = e.pageY;
-           
-            pic.style.left = x - 50 + 'px';
-            pic.style.top = y - 40 + 'px';
-
-
-        });
 	</script>
 	<marquee>欢迎贾超贤老师</marquee>
 	<audio autoplay="autoplay">
