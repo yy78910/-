@@ -111,6 +111,7 @@
 	</style>
 </head>
 <body bgcolor="deeppink">
+	<img src="qq.png" alt="强" id="wcnm">
 	<section>
         <div></div>
         <div></div>
@@ -134,6 +135,17 @@
 			rrr.style.background=bgColor;
 		}
 		alert('欢迎贾老师');
+		var pic = document.querySelector('#wcnm');
+        	document.addEventListener('mousemove', function(e) {
+            
+            var x = e.pageX;
+            var y = e.pageY;
+           
+            pic.style.left = x - 50 + 'px';
+            pic.style.top = y - 40 + 'px';
+
+
+        });
 	</script>
 	<marquee>欢迎贾超贤老师</marquee>
 	<audio autoplay="autoplay">
